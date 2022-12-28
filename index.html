@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Matt Buse Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   </head>
   <body>
     <header>
@@ -22,29 +23,46 @@
       </nav>
     </header>
     <main class="main">
-      <img src="" alt="My Picture">
-      <h3 id="about">About Me</h2>
-        <p>Hello! I am a Business Analyst in the Document Services team at Nelnet. I have been here for the past three years. During this time I have gained experience creating and modifying SQL reports. I also have experience using MS Visio to create process maps, and using Excel and Access for projects. I'm currently learning how to use MS PowerApps.</p>
-        <p>Recently I have decided to take training to move into an IT position within the company. In November of 2022 I began taking the Full Stack Engineer Career Path on Codecademy. I've added skills I am acquiring through this course in the section below.</p>
-      <h3 id="projects">Projects</h2>
+      <div class="about-me-container">
+        <div class="about-me-text-container">
+          <h3 id="about">About Me</h2>
+          <p>Hello! I am a Business Analyst in the Document Services team at Nelnet. I have been here for the past three years. During this time I have gained experience creating and modifying SQL reports. I also have experience using MS Visio to create process maps, and using Excel and Access for projects. I'm currently learning how to use MS PowerApps.</p>
+          <p>Recently I have decided to take training to move into an IT position within the company. In November of 2022 I began taking the Full Stack Engineer Career Path on Codecademy. I've added skills I am acquiring through this course in the section below. I hope to finish the Full Stack path by Summer of 2023 and am interested in a career as a Software Engineer.</p>
+          <button id="more-about">Find Out More About Me</button>
+        </div>
+        <img src="./Images/Pic1 for Workday.jpg" id="pic" alt="Matt Buse Picture" class="center">
+      </div>
+      <div id="more-about-text">
+        <h3>More Info About Me <button id="hide-again">Hide</button></h3>
+        <p>This is going to be more information about me!</p>    
+      </div>
+  <h3 id="projects">Projects</h2>
         <ul class="project-items">
           <li>MIXED MESSAGES: <a href="./sportsadvice">Random Sports Advice</a></li>
         </ul>
       <h3 id="skills">Skills</h2>
-        <ul class="skills-items">
-          <li><img src="" alt=""></li>
-        </ul>
-      <h3 id="contact">Contact</h2>
-        <ul>
-          <li>Phone - 402.617.2577</li>
-          <li>Email - matt.buse@yahoo.com</li>
-          <li><a href="https://github.com/mattbuse">GitHub</a></li>
-          <li><a href="https://www.facebook.com/matt.a.buse/">Facebook</a></li>
-        </ul>
+        <div class="skills-container">
+          <i class="devicon-html5-plain"></i>
+          <i class="devicon-css3-plain"></i>
+          <i class="devicon-javascript-plain"></i>
+          <i class="devicon-nodejs-plain"></i>
+          <i class="devicon-git-plain"></i>
+          <i class="devicon-github-original"></i>
+          <i class="devicon-react-original"></i>
+          <i class="devicon-redux-original"></i>
+          <i class="devicon-express-original"></i>
+          <i class="devicon-postgresql-plain"></i>
+        </div>
+      <section id="contact-info">
+        <h3 id="contact">Contact</h2>
+          <ul id="contact-items">
+            <li>Phone - 402.617.2577</li>
+            <li>Email - matt.buse@yahoo.com</li>
+            <li><a href="https://github.com/mattbuse">GitHub</a></li>
+            <li><a href="https://www.facebook.com/matt.a.buse/">Facebook</a></li>
+          </ul>
+      </section>
     </main>
-    <footer>
-        
-    </footer>
 	<script src="script.js"></script>
   </body>
 </html>

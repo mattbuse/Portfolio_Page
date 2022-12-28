@@ -2,7 +2,7 @@ body {
     background-color: darkslategray;
     color: whitesmoke;
     padding: 20px;
-    font-size: 16px;
+    font-size: 20px;
     font-family: georgia;
     max-width: 1000px;
     margin: 0 auto;
@@ -51,11 +51,35 @@ main {
     color: rgb(163, 163, 163);
 }
 
+.about-me-container {
+    display: flex;
+}
+
+.about-me-text-container {
+    margin-right: 40px;
+}
+
+.about-me-text-container p {
+    text-align: justify;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+}
+
+#more-about-text {
+    visibility: hidden;
+    margin: 50px 0px;
+}
+
 main h3 {
     color: whitesmoke;
 }
 
-.skills-items {
+.skills {
     display: flex;
     list-style-type: none;
     padding: 0;
@@ -63,4 +87,87 @@ main h3 {
     justify-content: space-around;
     margin: 0;
     margin-left: auto;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 3rem;
+}
+
+.project-items {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 1000px) {
+    nav {
+        display: block;
+    }
+
+    nav h1 {
+        margin-left: 0px;
+        font-size: 24;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .navigation-items {
+        margin-right: 0px;
+        justify-content: center;
+    }
+
+    .center {
+        display: none;
+    }
+
+    .skills-container {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: block;
+    }
+
+    nav h1 {
+        margin-left: 0px;
+        font-size: 24;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .navigation-items {
+        display: block;
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    .center {
+        display: none;
+    }
+
+    .skills-container {
+        font-size: 2rem;
+    }
+
+}
+
+/*#contact-info {
+    display: block;
+    margin-top: 75px;
+}
+
+#contact-info h3 {
+    text-align: center;
+}
+
+#contact-info ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    width: auto;
+    padding: 0;
+    margin-top: 30px;
 }
