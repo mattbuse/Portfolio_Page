@@ -144,6 +144,11 @@ main h3 {
         text-align: center;
     }
 
+    .navigation-items li {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
     .center {
         display: none;
     }
