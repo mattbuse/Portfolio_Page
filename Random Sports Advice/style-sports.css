@@ -34,6 +34,12 @@ main h1,h2 {
     font-family: verdana;
 }
 
+.photo {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
 #sport {
     margin-left: 60px;
 }
@@ -44,11 +50,11 @@ main h1,h2 {
 
 #advice {
     margin-left: 60px;
-    color: rgb(22, 179, 8);
+    color: rgb(202, 230, 77);
 }
 
 #reset {
-    margin: 30px 60px 0px 60px;
+    margin: 0px 60px;
     visibility: hidden;
 }
 
