@@ -1,0 +1,9 @@
+body {
+    background-color: darkslategray;
+    color: whitesmoke;
+    padding: 20px;
+    font-size: 20px;
+    font-family: georgia;
+    max-width: 1000px;
+    margin: 0 auto;
+}
