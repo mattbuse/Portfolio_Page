@@ -153,18 +153,22 @@ const loseEarly = () => {
 
 const goingToBet = (team,amount) => {
     strangerAdvice.innerHTML = `I've got $${amount} on the ${team} to win it all this year!`;
+    reset.style.visibility = 'visible';
 }
 
 const optimisticFan = (underdog,goFar) => {
     strangerAdvice.innerHTML = `Call me crazy, but I think the ${underdog} can ${goFar} this year!`;
+    reset.style.visibility = 'visible';
 }
 
 const overratedTeam = (team,loseEarly) => {
     strangerAdvice.innerHTML = `I don't care what they all say, the ${team} ${loseEarly} this year!`;
+    reset.style.visibility = 'visible';
 }
 
 const chalkPick = (team) => {
     strangerAdvice.innerHTML = `If you ask me, nobody can beat the ${team} this year!`;
+    reset.style.visibility = 'visible';
 }
 
 const randomSportsAdvice = (sport) => {
@@ -181,6 +185,7 @@ const randomSportsAdvice = (sport) => {
         chalkPick(goodnflTeam());
     } else {
         strangerAdvice.innerHTML = 'I don\'t know, man. You probably don\'t want my advice.';
+        reset.style.visibility = 'visible';
     }
     } else if (sport === 'NBA' || sport === 'nba') {
         let advNum = Math.floor(Math.random() * 4);
@@ -194,6 +199,7 @@ const randomSportsAdvice = (sport) => {
             chalkPick(goodnbaTeam());
         } else {
             strangerAdvice.innerHTML = 'I don\'t know, man. You probably don\'t want my advice.';
+            reset.style.visibility = 'visible';
         }
     
     } else if (sport === 'MLB' || sport === 'mlb') {
@@ -208,6 +214,7 @@ const randomSportsAdvice = (sport) => {
             chalkPick(goodmlbTeam());
         } else {
             strangerAdvice.innerHTML = 'I don\'t know, man. You probably don\'t want my advice.';
+            reset.style.visibility = 'visible';
         }
     } else if (sport === 'NHL' || sport === 'nhl') {
         let advNum = Math.floor(Math.random() * 4);
@@ -221,14 +228,24 @@ const randomSportsAdvice = (sport) => {
             chalkPick(goodnhlTeam());
         } else {
             strangerAdvice.innerHTML = 'I don\'t know, man. You probably don\'t want my advice.';
+            reset.style.visibility = 'visible';
         }
     } else {
         strangerAdvice.innerHTML = 'Sorry, I don\'t really watch that sport.';
+        reset.style.visibility = 'visible';
         }
+}
+
+function resetScreen() {
+    strangerAdvice.innerHTML = '';
+    reset.style.visibility = 'hidden';
+    document.getElementById('sport').value = '';    
 }
 
 let askForAdvice = document.getElementById('ask');
 //let sport = document.getElementById('sport').value;
 let strangerAdvice = document.getElementById('advice');
+let reset = document.getElementById('reset');
 
 askForAdvice.addEventListener('click',randomSportsAdvice);
+reset.addEventListener('click',resetScreen);

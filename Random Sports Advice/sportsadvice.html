@@ -11,19 +11,46 @@
   </head>
   <body>
     <header>
-      <h1>Random Sports Advice Project</h1>
+      <nav>
+        <ul class="navigation">
+          <li><a href="../index.html">Home</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
+      <h1>Portfolio Project #1</h1>
+      <h2>Random Sports Advice</h2>
+      <br>
       <div id="input">
         <label for="sport">What sport do you want to talk about?</label>
+        <br>
+        <br>
         <input type="text" id="sport" name="sport">
-        <button type="button" id="ask">Ask Stranger</button>
+        <button type="button" id="ask">Ask Friend</button>
       </div>
       <br>
       <br>
       <div id="output">
-        <p>Stranger says...</p>
-        <p id="advice">"I'll tell you what I think."</p>
+        <p>Your new friend says...</p>
+        <p id="advice"></p>
+      </div>
+      <br>
+      <button id="reset">Reset</button>
+      <br>
+      <div class="explanation">
+        <p>Welcome to my first JavaScript portfolio project. I created this in December 2022. The assignment was called 'Mixed Messages', and the instruction was to create a javascript function that would generate a random script (weather forecast, horoscope, etc). I came up with the idea to have someone give their opinion on random sports teams.</p>
+        <p>So imagine that you are at a sports bar and just met a new friend who likes to talk sports, and is never short on opinions. He seems to think he knows everything that's going to happen.</p>
+        <p>Go ahead and ask him. He may tell you...</p>
+        <ul>
+          <li>What team is going to win it all</li>
+          <li>What good team is going to disappoint people</li>
+          <li>What bad team is going to surprise people</li>
+          <li>How much money he has bet on a team</li>
+          <p class="sad">Or, if one of his teams just lost and he's feeling down...</p>
+          <li>He may not give you any advice</li>
+        </ul>
+        <p>And to add more variation to the project, type the acronym of the sport (NFL, NBA...) you are interested in hearing about.</p>
+        <p>So go ahead! Have a drink and ask your new friend what he thinks.</p>
       </div>
       <script src="./script-sports.js"></script>
     </main>
