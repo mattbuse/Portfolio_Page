@@ -92,3 +92,50 @@ main h3 {
 .explanation {
     margin: 60px 0px;
 }
+
+@media only screen and (max-width: 1000px) {
+    nav {
+        display: block;
+    }
+
+    nav h1 {
+        margin-left: 0px;
+        font-size: 24;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .navigation-items {
+        margin-right: 0px;
+        margin-top: 30px;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: block;
+    }
+
+    nav h1 {
+        margin-left: 0px;
+        font-size: 24;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .navigation-items {
+        display: block;
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    .navigation-items li {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #sport {
+        margin-left: 0px;
+    }
+}
