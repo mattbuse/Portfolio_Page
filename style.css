@@ -161,12 +161,14 @@ main h3 {
         display: none;
     }
 
-    .skills-container {
+    .skills-container i {
         font-size: 1.5rem;
+        margin-left: 4px;
+        margin-right:4px;
     }
 
     #contact-items {
-        font-size: 12px;
+        font-size: 18px;
     }
 
 }
