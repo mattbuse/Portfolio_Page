@@ -128,6 +128,10 @@ main h3 {
 }
 
 @media only screen and (max-width: 1000px) {
+    body {
+        font-size: 18px;
+    }
+    
     header img {
         padding: 15px;
     }
@@ -148,7 +152,27 @@ main h3 {
         justify-content: center;
     }
 
-    .center {
+    .about-me-text-container {
+        margin-right: 0px;
+    }
+    
+    #pic {
+        display: none;
+    }
+
+    .favorites {
+        font-size: 18px;
+    }
+
+    .favorites ul {
+        margin-top: 50px;
+    }
+
+    #family {
+        width: 70%;
+    }
+
+    #cat {
         display: none;
     }
 
@@ -158,6 +182,10 @@ main h3 {
 }
 
 @media only screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+    
     nav {
         display: block;
     }
@@ -182,8 +210,24 @@ main h3 {
         margin-bottom: 15px;
     }
 
-    .center {
+    #pic {
         display: none;
+    }
+
+    .about-me-text-container {
+        margin-right: 0px;
+    }
+    
+    .favorites {
+        font-size: 15px;
+        display: block;
+        text-align: center;
+        list-style-type: none;
+        list-style-position: inside;
+    }
+
+    .favorites ul {
+        padding-inline-start: 0px;
     }
 
     .skills-container i {
