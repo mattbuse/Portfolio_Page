@@ -68,7 +68,9 @@ main h3 {
 .photo {
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding: 40px 0px 0px 0px;
+    width: 100%;
+    height: auto;
 }
 
 #sport {
@@ -81,7 +83,7 @@ main h3 {
 
 #advice {
     margin-left: 60px;
-    color: rgb(202, 230, 77);
+    color: rgb(69, 201, 86);
 }
 
 #reset {
@@ -94,6 +96,10 @@ main h3 {
 }
 
 @media only screen and (max-width: 1000px) {
+    header img {
+        padding: 15px;
+    }
+    
     nav {
         display: block;
     }
@@ -107,9 +113,14 @@ main h3 {
 
     .navigation-items {
         margin-right: 0px;
-        margin-top: 30px;
         justify-content: center;
     }
+
+    .photo {
+        width: 450px;
+        height: 300px;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -128,6 +139,8 @@ main h3 {
         display: block;
         margin-right: 0px;
         text-align: center;
+        padding: 0px;
+        font-size: 20px;
     }
 
     .navigation-items li {
@@ -138,4 +151,10 @@ main h3 {
     #sport {
         margin-left: 0px;
     }
+    
+    .photo {
+        width: 330px;
+        height: 220px;
+    }
+
 }

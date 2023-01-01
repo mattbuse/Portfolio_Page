@@ -115,6 +115,10 @@ main h3 {
 }
 
 @media only screen and (max-width: 1000px) {
+    header img {
+        padding: 15px;
+    }
+    
     nav {
         display: block;
     }
@@ -128,7 +132,6 @@ main h3 {
 
     .navigation-items {
         margin-right: 0px;
-        margin-top: 30px;
         justify-content: center;
     }
 
@@ -157,6 +160,8 @@ main h3 {
         display: block;
         margin-right: 0px;
         text-align: center;
+        padding: 0px;
+        font-size: 20px;
     }
 
     .navigation-items li {
