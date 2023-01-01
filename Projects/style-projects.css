@@ -5,7 +5,7 @@ body {
     font-size: 20px;
     font-family: georgia;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 a {
@@ -13,7 +13,7 @@ a {
 }
 
 a:visited {
-    color: rgb(226, 148, 2);
+    color: #f96;
 }
 
 a:hover {
@@ -31,13 +31,13 @@ header img {
 nav {
     display: flex;
     align-items: center;
-    font-family: Verdana;
     text-transform: uppercase;
 }
 
 .navigation-items {
     display: flex;
-    font-family: verdana;
+    font-family: calibri;
+    font-size: 28px;
     list-style-type: none;
     padding: 0;
     justify-content: space-around;
@@ -62,11 +62,19 @@ main h3 {
 }
 
 .projects {
-    padding: 40px;
+    padding: 20px 0px;
 }
 
 .practice {
-    padding: 40px;
+    padding: 20px 0px;
+}
+
+.projects li {
+    margin: 15px;
+}
+
+.practice li {
+    margin: 15px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -127,22 +135,4 @@ main h3 {
         font-size: 2rem;
     }
 
-}
-
-/*#contact-info {
-    display: block;
-    margin-top: 75px;
-}
-
-#contact-info h3 {
-    text-align: center;
-}
-
-#contact-info ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-    width: auto;
-    padding: 0;
-    margin-top: 30px;
 }
