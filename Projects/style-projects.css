@@ -79,6 +79,11 @@ main h3 {
 }
 
 @media only screen and (max-width: 1000px) {
+    body {
+        font-size: 18px;
+        padding: 25px;
+    }
+
     header img {
         padding: 15px;
     }
@@ -97,51 +102,10 @@ main h3 {
     .navigation-items {
         margin-right: 0px;
         justify-content: center;
-    }
-    .center {
-        display: none;
-    }
-
-    .skills-container {
-        font-size: 2rem;
+        font-size: 22px;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-        font-size: 18px;
-    }
-    
-    nav {
-        display: block;
-    }
-
-    nav h1 {
-        margin-left: 0px;
-        font-size: 24;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .navigation-items {
-        display: block;
-        margin-right: 0px;
-        text-align: center;
-        font-size: 22px;
-        padding: 0px;
-    }
-
-    .navigation-items li {
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    .center {
-        display: none;
-    }
-
-    .skills-container {
-        font-size: 2rem;
-    }
 
 }

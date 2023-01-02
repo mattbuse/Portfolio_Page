@@ -137,6 +137,7 @@ main h3 {
 @media only screen and (max-width: 1000px) {
     body {
         font-size: 18px;
+        padding: 25px;
     }
     
     header img {
@@ -187,36 +188,13 @@ main h3 {
     .skills-container {
         font-size: 2rem;
     }
+    
+    #contact-items li {
+        padding: 3px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-        font-size: 18px;
-    }
-    
-    nav {
-        display: block;
-    }
-
-    nav h1 {
-        margin-left: 0px;
-        font-size: 24;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .navigation-items {
-        display: block;
-        margin-right: 0px;
-        text-align: center;
-        padding: 0px;
-    }
-
-    .navigation-items li {
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
     #pic {
         display: none;
     }
@@ -226,7 +204,7 @@ main h3 {
     }
     
     .favorites {
-        font-size: 15px;
+        font-size: 18px;
         display: block;
         text-align: center;
         list-style-type: none;
