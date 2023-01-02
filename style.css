@@ -58,10 +58,18 @@ main {
     color: rgb(163, 163, 163);
 }
 
+#small {
+    display: none;
+}
+
 .about-me-container {
     display: flex;
-    margin-top: 20px;
+    margin-top: 45px;
     margin-bottom: 20px;
+}
+
+#about {
+    margin-top: 0px;
 }
 
 .about-me-text-container {
@@ -159,6 +167,17 @@ main h3 {
         margin-right: 0px;
         justify-content: center;
         font-size: 22px;
+    }
+
+    #small {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 30px;
+        width: 70%;
+        max-width: 300px;
     }
 
     .about-me-text-container {

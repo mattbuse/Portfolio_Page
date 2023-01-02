@@ -121,6 +121,7 @@ main h3 {
     .navigation-items {
         margin-right: 0px;
         justify-content: center;
+        font-size: 22px;
     }
 
     .photo {
