@@ -87,6 +87,12 @@ main {
     border-radius: 30px;
 }
 
+main figcaption {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
 #more-about-text {
     display: none;
     margin: 50px 0px;
@@ -200,6 +206,10 @@ main h3 {
     }
     
     #pic {
+        display: none;
+    }
+
+    main figure {
         display: none;
     }
 
