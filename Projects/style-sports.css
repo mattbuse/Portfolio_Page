@@ -137,7 +137,11 @@ main h3 {
     #sport {
         margin-left: 0px;
     }
-    
+
+    #advice {
+        margin-left: 0px;
+    }
+
     .photo {
         width: 330px;
         height: 220px;

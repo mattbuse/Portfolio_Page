@@ -66,6 +66,10 @@ main h3 {
     padding: 20px 0px;
 }
 
+.projects ul {
+    padding-left: 20px;
+}
+
 .practice {
     padding: 20px 0px;
 }
