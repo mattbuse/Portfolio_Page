@@ -74,12 +74,23 @@ main h3 {
     padding: 20px 0px;
 }
 
+.practice ul {
+    padding-left: 20px;
+}
+
 .projects li {
     margin: 15px;
 }
 
 .practice li {
     margin: 15px;
+}
+
+#back {
+    font-size: 12px;
+    text-align: center;
+    color: rgb(163, 163, 163);
+    padding: 20px;
 }
 
 @media only screen and (max-width: 1000px) {
