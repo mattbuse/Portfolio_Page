@@ -97,9 +97,15 @@ main {
     padding: 30px;
 }
 
+.favorites p {
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+}
+
 #family {
     border-radius: 75px;
-    min-width: 340px;
+    min-width: 280px;
 }
 
 #cat {
@@ -160,14 +166,14 @@ main h3 {
     header img {
         padding: 15px;
     }
-    
+
     nav {
         display: block;
     }
 
     nav h1 {
         margin-left: 0px;
-        font-size: 24;
+        font-size: 24px;
         text-align: center;
         justify-content: center;
     }
@@ -175,7 +181,6 @@ main h3 {
     .navigation-items {
         margin-right: 0px;
         justify-content: center;
-        font-size: 22px;
     }
 
     #small {
@@ -241,6 +246,12 @@ main h3 {
 
     .favorites ul {
         padding-inline-start: 0px;
+    }
+
+    #more-about-text img {
+        padding: 0px;
+        border-radius: 40px;
+        margin-top: 50px;
     }
 
     .skills-container i {
