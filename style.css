@@ -97,6 +97,15 @@ main {
     padding: 30px;
 }
 
+#family {
+    border-radius: 75px;
+    min-width: 340px;
+}
+
+#cat {
+    border-radius: 75px;
+}
+
 main h3 {
     color: whitesmoke;
 }
