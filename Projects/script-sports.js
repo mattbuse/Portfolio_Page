@@ -8,7 +8,7 @@ const goodnflTeam = () => {
     } else if (nflteamNum === 2) {
         team = 'Eagles';
     } else {
-        team = 'Cowboys';
+        team = 'Niners';
     }
     return team;
 }
@@ -119,7 +119,7 @@ const underdognhlTeam = () => {
 }
 
 const betAmount = () => {
-    let number = Math.floor(Math.random() * 10);
+    let number = Math.floor(Math.random() * 5);
     let amount = (number + 1) * 50;
     return amount;
 }
@@ -141,42 +141,56 @@ const loseEarly = () => {
     let howEarly;
     let earlyNumber = Math.floor(Math.random() * 3);
     if (earlyNumber === 0) {
-        howEarly = 'will have a losing record';
+        howEarly = 'have a losing record';
     } else if (earlyNumber === 1) {
-        howEarly = 'won\'t even make the playoffs';
+        howEarly = 'miss the playoffs';
     } else {
-        howEarly = 'won\'t even get past the first round';
+        howEarly = 'lose in the first round';
     }
     return howEarly;
 }
 
+const championship = () => {
+    let sport = document.getElementById('sport').value;
+    let finalRound;
+    if (sport === 'NFL' || sport === 'nfl') {
+        finalRound = 'Super Bowl';
+    } else if (sport === 'NBA' || sport === 'nba') {
+        finalRound = 'NBA Finals';
+    } else if (sport === 'NHL' || sport === 'nhl') {
+        finalRound = 'Stanley Cup';
+    } else if (sport === 'MLB' || sport === 'mlb') {
+        finalRound = 'World Series';
+    }
+    return finalRound;
+}
 
-const goingToBet = (team,amount) => {
-    strangerAdvice.innerHTML = `I've got $${amount} on the ${team} to win it all this year!`;
+const goingToBet = (team,amount,finalRound) => {
+    strangerAdvice.innerHTML = `I've got $${amount} on the ${team} to win the ${finalRound} this year.`;
     reset.style.visibility = 'visible';
 }
 
 const optimisticFan = (underdog,goFar) => {
-    strangerAdvice.innerHTML = `Call me crazy, but I think the ${underdog} can ${goFar} this year!`;
+    strangerAdvice.innerHTML = `It might sound crazy, but I think the ${underdog} can ${goFar} next year.`;
     reset.style.visibility = 'visible';
 }
 
 const overratedTeam = (team,loseEarly) => {
-    strangerAdvice.innerHTML = `I don't care what they all say, the ${team} ${loseEarly} this year!`;
+    strangerAdvice.innerHTML = `Everybody likes the ${team}, but I think they'll ${loseEarly}.`;
     reset.style.visibility = 'visible';
 }
 
 const chalkPick = (team) => {
-    strangerAdvice.innerHTML = `If you ask me, nobody can beat the ${team} this year!`;
+    strangerAdvice.innerHTML = `As long as they stay healthy, nobody can beat the ${team} this year!`;
     reset.style.visibility = 'visible';
 }
 
 const randomSportsAdvice = (sport) => {
     sport = document.getElementById('sport').value;
     if (sport === 'NFL' || sport === 'nfl') {
-    let advNum = Math.floor(Math.random() * 4);
+    let advNum = Math.floor(Math.random() * 5);
     if (advNum === 0) {
-        goingToBet(goodnflTeam(),betAmount());
+        goingToBet(goodnflTeam(),betAmount(),championship());
     } else if (advNum === 1) {
         optimisticFan(underdognflTeam(),goFar());
     } else if (advNum === 2) {
@@ -184,13 +198,13 @@ const randomSportsAdvice = (sport) => {
     } else if (advNum === 3) {
         chalkPick(goodnflTeam());
     } else {
-        strangerAdvice.innerHTML = 'I don\'t know, man. You probably don\'t want my advice.';
+        strangerAdvice.innerHTML = 'I don\'t know, man. It\'s probably all fixed anyway.';
         reset.style.visibility = 'visible';
     }
     } else if (sport === 'NBA' || sport === 'nba') {
-        let advNum = Math.floor(Math.random() * 4);
+        let advNum = Math.floor(Math.random() * 5);
         if (advNum === 0) {
-            goingToBet(goodnbaTeam(),betAmount());
+            goingToBet(goodnbaTeam(),betAmount(),championship());
         } else if (advNum === 1) {
             optimisticFan(underdognbaTeam(),goFar());
         } else if (advNum === 2) {
@@ -198,14 +212,14 @@ const randomSportsAdvice = (sport) => {
         } else if (advNum === 3) {
             chalkPick(goodnbaTeam());
         } else {
-            strangerAdvice.innerHTML = 'I don\'t know, man. You probably don\'t want my advice.';
+            strangerAdvice.innerHTML = 'I don\'t know, man. It\'s probably all fixed anyway.';
             reset.style.visibility = 'visible';
         }
     
     } else if (sport === 'MLB' || sport === 'mlb') {
-        let advNum = Math.floor(Math.random() * 4);
+        let advNum = Math.floor(Math.random() * 5);
         if (advNum === 0) {
-            goingToBet(goodmlbTeam(),betAmount());
+            goingToBet(goodmlbTeam(),betAmount(),championship());
         } else if (advNum === 1) {
             optimisticFan(underdogmlbTeam(),goFar());
         } else if (advNum === 2) {
@@ -213,13 +227,13 @@ const randomSportsAdvice = (sport) => {
         } else if (advNum === 3) {
             chalkPick(goodmlbTeam());
         } else {
-            strangerAdvice.innerHTML = 'I don\'t know, man. You probably don\'t want my advice.';
+            strangerAdvice.innerHTML = 'I don\'t know, man. It\'s probably all fixed anyway';
             reset.style.visibility = 'visible';
         }
     } else if (sport === 'NHL' || sport === 'nhl') {
-        let advNum = Math.floor(Math.random() * 4);
+        let advNum = Math.floor(Math.random() * 5);
         if (advNum === 0) {
-            goingToBet(goodnhlTeam(),betAmount());
+            goingToBet(goodnhlTeam(),betAmount(),championship());
         } else if (advNum === 1) {
             optimisticFan(underdognhlTeam(),goFar());
         } else if (advNum === 2) {
@@ -227,7 +241,7 @@ const randomSportsAdvice = (sport) => {
         } else if (advNum === 3) {
             chalkPick(goodnhlTeam());
         } else {
-            strangerAdvice.innerHTML = 'I don\'t know, man. You probably don\'t want my advice.';
+            strangerAdvice.innerHTML = 'I don\'t know, man. It\'s probably all fixed anyway';
             reset.style.visibility = 'visible';
         }
     } else {
