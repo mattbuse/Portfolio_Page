@@ -227,7 +227,7 @@ const randomSportsAdvice = (sport) => {
         } else if (advNum === 3) {
             chalkPick(goodmlbTeam());
         } else {
-            strangerAdvice.innerHTML = 'I don\'t know, man. It\'s probably all fixed anyway';
+            strangerAdvice.innerHTML = 'I don\'t know, man. It\'s probably all fixed anyway.';
             reset.style.visibility = 'visible';
         }
     } else if (sport === 'NHL' || sport === 'nhl') {
@@ -241,7 +241,7 @@ const randomSportsAdvice = (sport) => {
         } else if (advNum === 3) {
             chalkPick(goodnhlTeam());
         } else {
-            strangerAdvice.innerHTML = 'I don\'t know, man. It\'s probably all fixed anyway';
+            strangerAdvice.innerHTML = 'I don\'t know, man. It\'s probably all fixed anyway.';
             reset.style.visibility = 'visible';
         }
     } else {
