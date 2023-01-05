@@ -4,19 +4,19 @@ function genComp() {
     let random = Math.floor(Math.random() * 3);
     if (random === 0) {
         compChoice = 'rock';
-        compRock.style.display = 'block';
+        compRock.style.display = 'flex';
         compPaper.style.display = 'none';
         compScissors.style.display = 'none';
         startGame(yourPick,compChoice);
     } else if (random === 1) {
         compChoice = 'paper';
-        compPaper.style.display = 'block';
+        compPaper.style.display = 'flex';
         compRock.style.display = 'none';
         compScissors.style.display = 'none';
         startGame(yourPick,compChoice);
     } else {
         compChoice = 'scissors';
-        compScissors.style.display = 'block';
+        compScissors.style.display = 'flex';
         compRock.style.display = 'none';
         compPaper.style.display = 'none';
         startGame(yourPick,compChoice);
@@ -42,15 +42,15 @@ const startGame = (yourPick,compChoice) => {
 const showYourChoice = (yourPick) => {
     yourPick = document.getElementById('your-choice').value;
     if (yourPick === 'rock') {
-        yourRock.style.display = 'block';
+        yourRock.style.display = 'flex';
         yourPaper.style.display = 'none';
         yourScissors.style.display = 'none';
     } else if (yourPick === 'paper') {
-        yourPaper.style.display = 'block';
+        yourPaper.style.display = 'flex';
         yourRock.style.display = 'none';
         yourScissors.style.display = 'none';
     } else if (yourPick === 'scissors') {
-        yourScissors.style.display = 'block';
+        yourScissors.style.display = 'flex';
         yourRock.style.display = 'none';
         yourPaper.style.display = 'none';
     }

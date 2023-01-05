@@ -68,7 +68,6 @@ main h3 {
 
 .flex-container {
     display: flex;
-
 }
 
 .your-box {
@@ -121,45 +120,6 @@ main h3 {
     padding: 40px;
 }
 
-
-
-/*.photo {
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 40px 0px 0px 0px;
-    width: 85%;
-}
-
-#sport {
-    margin-left: 60px;
-}
-
-#ask {
-    margin-left: 30px;
-}
-
-#advice {
-    margin-left: 60px;
-    color: rgb(69, 201, 86);
-}
-
-#reset {
-    margin: 0px 60px;
-    visibility: hidden;
-}
-
-.explanation {
-    margin: 60px 0px;
-}
-
-.sad {
-    margin-left: 40px;
-    margin-bottom: 50px;
-}
-*/
-
 #back {
     font-size: 12px;
     text-align: center;
@@ -195,27 +155,52 @@ main h3 {
         font-size: 22px;
     }
 
-    .photo {
-        display: flex;
-        justify-content: center;
-        width: 510px;
-        height: 340px;
+    .vs p {
+        font-size: 24px;
     }
 
 }
 
-@media only screen and (max-width: 600px) {
-    #sport {
-        margin-left: 0px;
+@media only screen and (max-width: 800px) {
+    .flex-container {
+        display: block;
+    }
+    
+    .your-box {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+    
+    .vs {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        height: 50px;
     }
 
-    #advice {
-        margin-left: 0px;
+    .comp-box {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
     }
-
-    .photo {
-        width: 330px;
-        height: 220px;
+    
+    .flex-container img {
+        display: none;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+        padding: 20px;
     }
-
+    
+    .outcome p {
+        font-size: 24px;
+    }
+    
 }
