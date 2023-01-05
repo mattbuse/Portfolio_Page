@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Matt Buse">
+    <meta name="description" content="Random Sports Advice Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mattBuse Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style-rockpaperscissors.css">
+    <link rel="icon" type="image/x-icon" href="../Images/logos/favicon.png">
+  </head>
+  <body>
+    <header id="top">
+      <nav>
+        <img src="../Images/logos/logo-horizontal-no-background 400.png" class="logo">
+        <ul class="navigation-items">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="./projects.html">PROJECTS</a></li>
+          </ul>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="title">
+        <h3>Practice Project #1</h3>
+      <h4>Rock, Paper, Scissors Game</h4>
+      <br>
+      <section class="flex-container">
+        <div class="your-box">
+          <div class="your-entry">
+            <p>Make a Selection...</p>
+            <label for="your-choice">Your Choice: </label>
+            <select name="your-choice" id="your-choice">
+              <option value="blank"></option>
+              <option value="rock">Rock</option>
+              <option value="paper">Paper</option>
+              <option value="scissors">Scissors</option>
+           </select>
+           <button type="button" id="choose">Choose</button>
+           <img src="./images/150_rock.png" id="your-rock-img">
+           <img src="./images/150_paper.png" id="your-paper-img">
+           <img src="./images/150_scissors.jpg" id="your-scissors-img">
+          </div>
+        </div>
+        <div class="vs">
+          <p>VS</p>
+        </div>
+        <div class="comp-box">
+          <div class="comp-entry">
+            <p>Computer will draw randomly...</p>
+            <button type="button" id="draw">Draw for Computer</button>
+          <img src="./images/150_rock.png" id="comp-rock-img">
+          <img src="./images/150_paper.png" id="comp-paper-img">
+          <img src="./images/150_scissors.jpg" id="comp-scissors-img">
+          </div>
+        </div>
+      </section>
+      <section class="outcome">
+        <div class="outcome-box">
+          <p id="decision"></p>
+          <button type="button" id="reset">Reset</button>
+        </div>
+      </section>
+      <div class="explanation">
+        <p>Welcome to my Rock, Paper, Scissors game.</p>
+        <p>All you need to do is make a selection above, and then click the button to draw a random entry for the computer.</p>
+        <p>Good luck!</p>
+      </div>
+    <script src="./script-rockpaperscissors.js"></script>
+    </main>
+    <footer>
+      <p id="back"><a href=#top>Back to Top</a></p>
+    </footer>
+  </body>
+  </html>

@@ -1,0 +1,212 @@
+body {
+    background-color: rgb(73, 73, 73);
+    color: whitesmoke;
+    padding: 20px;
+    font-size: 20px;
+    font-family: georgia;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+a {
+    color: rgb(2, 153, 153);
+}
+
+a:visited {
+    color: #f96;
+}
+
+a:hover {
+    color: rgb(189, 4, 189);
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    min-width: 280px;
+    padding: 30px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.navigation-items {
+    display: flex;
+    font-family: calibri;
+    font-size: 28px;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-around;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 35px;
+    font-weight: bold;
+}
+
+nav li {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+main {
+    color: rgb(163, 163, 163);
+}
+
+main h3 {
+    color: whitesmoke;
+}
+
+.title {
+    margin: 40px 0px;
+}
+
+.flex-container {
+    display: flex;
+
+}
+
+.your-box {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    border: 5px solid rgb(2, 153, 153);
+}
+
+.vs {
+    width: 200px;
+    height: 400px;
+    text-align: center;
+    justify-content: center;
+}
+
+.comp-box {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    border: 5px solid rgb(2, 153, 153);
+}
+
+.flex-container img {
+    display: none;
+    justify-content: center;
+    padding: 40px;
+}
+
+.outcome {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: 60px;
+    padding: 40px;
+}
+
+.explanation {
+    display: block;
+}
+
+
+
+/*.photo {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0px 0px 0px;
+    width: 85%;
+}
+
+#sport {
+    margin-left: 60px;
+}
+
+#ask {
+    margin-left: 30px;
+}
+
+#advice {
+    margin-left: 60px;
+    color: rgb(69, 201, 86);
+}
+
+#reset {
+    margin: 0px 60px;
+    visibility: hidden;
+}
+
+.explanation {
+    margin: 60px 0px;
+}
+
+.sad {
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+*/
+
+#back {
+    font-size: 12px;
+    text-align: center;
+    color: rgb(163, 163, 163);
+    padding: 0px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    body {
+        font-size: 18px;
+        padding: 25px;
+    }
+    
+    header img {
+        padding: 15px;
+    }
+    
+    nav {
+        display: block;
+    }
+
+    nav h1 {
+        margin-left: 0px;
+        font-size: 24;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .navigation-items {
+        margin-right: 0px;
+        justify-content: center;
+        font-size: 22px;
+    }
+
+    .photo {
+        display: flex;
+        justify-content: center;
+        width: 510px;
+        height: 340px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    #sport {
+        margin-left: 0px;
+    }
+
+    #advice {
+        margin-left: 0px;
+    }
+
+    .photo {
+        width: 330px;
+        height: 220px;
+    }
+
+}
