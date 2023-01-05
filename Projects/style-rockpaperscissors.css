@@ -74,24 +74,29 @@ main h3 {
 .your-box {
     display: flex;
     width: 400px;
-    height: 400px;
+    height: 300px;
     justify-content: center;
-    border: 5px solid rgb(2, 153, 153);
 }
 
 .vs {
+    display: flex;
     width: 200px;
     height: 400px;
-    text-align: center;
     justify-content: center;
+}
+
+.vs p {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 48px;
 }
 
 .comp-box {
     display: flex;
     width: 400px;
-    height: 400px;
+    height: 300px;
     justify-content: center;
-    border: 5px solid rgb(2, 153, 153);
 }
 
 .flex-container img {
@@ -104,12 +109,16 @@ main h3 {
     display: block;
     justify-content: center;
     text-align: center;
-    margin: 60px;
-    padding: 40px;
+    padding-bottom: 60px;
+}
+
+.outcome p {
+    font-size: 36px;
 }
 
 .explanation {
     display: block;
+    padding: 40px;
 }
 
 

@@ -1,34 +1,38 @@
 function genComp() {
     let compChoice;
+    yourPick = document.getElementById('your-choice').value;
     let random = Math.floor(Math.random() * 3);
     if (random === 0) {
         compChoice = 'rock';
         compRock.style.display = 'block';
         compPaper.style.display = 'none';
         compScissors.style.display = 'none';
+        startGame(yourPick,compChoice);
     } else if (random === 1) {
         compChoice = 'paper';
         compPaper.style.display = 'block';
         compRock.style.display = 'none';
         compScissors.style.display = 'none';
+        startGame(yourPick,compChoice);
     } else {
         compChoice = 'scissors';
         compScissors.style.display = 'block';
         compRock.style.display = 'none';
         compPaper.style.display = 'none';
+        startGame(yourPick,compChoice);
     }
     return compChoice;
 }
 
-const startGame = (yourPick,genComp) => {
+const startGame = (yourPick,compChoice) => {
     yourPick = document.getElementById('your-choice').value;
-    if (yourPick === genComp) {
+    if (yourPick === compChoice) {
         decision.innerHTML = 'The game is a draw!';
-    } else if (yourPick === 'rock' && genComp === 'scissors') {
+    } else if (yourPick === 'rock' && compChoice === 'scissors') {
         decision.innerHTML = 'You have won the game!';
-    } else if (yourPick === 'paper' && genComp === 'rock') {
+    } else if (yourPick === 'paper' && compChoice === 'rock') {
         decision.innerHTML = 'You have won the game!';
-    } else if (yourPick === 'scissors' && genComp === 'paper') {
+    } else if (yourPick === 'scissors' && compChoice === 'paper') {
         decision.innerHTML = 'You have won the game!';
     } else {
         decision.innerHTML = 'Sorry, the computer beat you.';
@@ -54,9 +58,15 @@ const showYourChoice = (yourPick) => {
 
 function resetGame() {
     let decision = document.getElementById('decision');
-    let yourChoice = document.getElementById('your-choice').value;
+    let yourPick = document.getElementById('your-choice');
     decision.innerHTML = '';
-    yourChoice.value = '';
+    yourPick.value = '';
+    yourRock.style.display = 'none';
+    yourPaper.style.display = 'none';
+    yourScissors.style.display = 'none';
+    compRock.style.display = 'none';
+    compPaper.style.display = 'none';
+    compScissors.style.display = 'none';
 }
 
 let yourRock = document.getElementById('your-rock-img');
@@ -74,5 +84,5 @@ let reset = document.getElementById('reset');
 let decision = document.getElementById('decision');
 
 choose.addEventListener('click',showYourChoice);
-drawComp.addEventListener('click',genComp,startGame);
+drawComp.addEventListener('click',genComp);
 reset.addEventListener('click',resetGame);
