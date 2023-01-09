@@ -82,6 +82,7 @@ main li {
 .curriculum-container button {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 21px;
     margin-left: 50px;
 }
@@ -104,6 +105,7 @@ main li {
 
 #unit-one-sections {
     display: none;
+    margin-left: 40px;
 }
 
 .unit-two-container {
@@ -124,6 +126,7 @@ main li {
 
 #unit-two-sections {
     display: none;
+    margin-left: 40px;
 }
 
 .unit-three-container {
@@ -144,6 +147,7 @@ main li {
 
 #unit-three-sections {
     display: none;
+    margin-left: 40px;
 }
 
 .unit-four-container {
@@ -164,6 +168,7 @@ main li {
 
 #unit-four-sections {
     display: none;
+    margin-left: 40px;
 }
 
 .unit-five-container {
@@ -184,6 +189,7 @@ main li {
 
 #unit-five-sections {
     display: none;
+    margin-left: 40px;
 }
 
 .unit-six-container {
@@ -204,10 +210,8 @@ main li {
 
 #unit-six-sections {
     display: none;
+    margin-left: 40px;
 }
-
-
-
 
 .disclaimer {
     font-size: 12px;
@@ -243,107 +247,23 @@ main li {
         justify-content: center;
     }
 
-    #small {
-        display: block;
-        margin-top: 15px;
-        margin-bottom: 35px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 30px;
-        width: 70%;
-        max-width: 200px;
+    #everything {
+        min-width: 86px;
     }
 
-    .about-me-text-container {
-        margin-right: 0px;
-    }
-    
-    #pic {
-        display: none;
-    }
-
-    main figure {
-        display: none;
-    }
-
-    .favorites {
-        font-size: 18px;
-    }
-
-    .favorites ul {
-        margin-top: 50px;
-    }
-
-    #family {
-        width: 70%;
-    }
-
-    #cat {
-        display: none;
-    }
-
-    .skills-container {
-        font-size: 2rem;
-    }
-    
-    #contact-items li {
-        padding: 3px;
-    }
 }
 
 @media only screen and (max-width: 600px) {
-    #pic {
-        display: none;
+    main li {
+        font-size: 16px;
     }
 
-    .about-me-text-container {
-        margin-right: 0px;
-    }
-    
-    .favorites {
-        font-size: 18px;
-        display: block;
-        text-align: center;
-        list-style-type: none;
-        list-style-position: inside;
+    main p {
+        font-size: 15px;
+        margin-left: 20px;
     }
 
-    .favorites ul {
-        padding-inline-start: 0px;
+    #unit-one-sections {
+        margin-left: 0px;
     }
-
-    #more-about-text img {
-        padding: 0px;
-        border-radius: 40px;
-        margin-top: 50px;
-    }
-
-    .skills-container i {
-        font-size: 1.5rem;
-        margin-left: 4px;
-        margin-right:4px;
-    }
-
-    #contact-items {
-        font-size: 18px;
-    }
-
-}
-
-/*#contact-info {
-    display: block;
-    margin-top: 75px;
-}
-
-#contact-info h3 {
-    text-align: center;
-}
-
-#contact-info ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-    width: auto;
-    padding: 0;
-    margin-top: 30px;
 }
