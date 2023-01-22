@@ -272,12 +272,16 @@ main h3 {
     }
 
     .skills-container {
-        padding: 15px;
+        padding: 5px 15px;
+    }
+
+    .skills-container div {
+        padding: 10px 0px;
     }
 
     .skills-container i {
         justify-content: space-between;
-        padding: 0px 3px;
+        padding: 3px;
         margin-left: 4px;
         margin-right:4px;
     }
