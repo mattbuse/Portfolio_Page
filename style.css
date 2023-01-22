@@ -87,6 +87,10 @@ main {
     border-radius: 30px;
 }
 
+main figure {
+    margin-inline-end: 0px;
+}
+
 main figcaption {
     text-align: right;
     margin-top: 10px;
