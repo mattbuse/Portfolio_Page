@@ -4,7 +4,7 @@ function toggleName1() {
         id1.innerHTML = '';
     } else if (button1.innerHTML === '+') {
         button1.innerHTML = '-';
-        id1.innerHTML = 'Julie';
+        id1.innerHTML = ' Julie';
     }
 }
 
@@ -14,7 +14,7 @@ function toggleName2() {
         id2.innerHTML = '';
     } else if (button2.innerHTML === '+') {
         button2.innerHTML = '-';
-        id2.innerHTML = 'Victoria';
+        id2.innerHTML = ' Victoria';
     }
 }
 
@@ -24,7 +24,7 @@ function toggleName3() {
         id3.innerHTML = '';
     } else if (button3.innerHTML === '+') {
         button3.innerHTML = '-';
-        id3.innerHTML = 'Megan';
+        id3.innerHTML = ' Megan';
     }
 }
 
@@ -34,7 +34,7 @@ function toggleName4() {
         id4.innerHTML = '';
     } else if (button4.innerHTML === '+') {
         button4.innerHTML = '-';
-        id4.innerHTML = 'Shannan';
+        id4.innerHTML = ' Shannan';
     }
 }
 
@@ -44,7 +44,7 @@ function toggleName5() {
         id5.innerHTML = '';
     } else if (button5.innerHTML === '+') {
         button5.innerHTML = '-';
-        id5.innerHTML = 'Sara';
+        id5.innerHTML = ' Sara';
     }
 }
 
@@ -54,7 +54,7 @@ function toggleName6() {
         id6.innerHTML = '';
     } else if (button6.innerHTML === '+') {
         button6.innerHTML = '-';
-        id6.innerHTML = 'Matt';
+        id6.innerHTML = ' Matt';
     }
 }
 
