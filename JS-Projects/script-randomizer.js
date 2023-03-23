@@ -75,6 +75,7 @@ function getArray() {
     getRandomArray(finalArray);
 }
 
+// fisher-yates algorithm... //
 function getRandomArray(array) {
     let j, x, i;
     for (i = array.length - 1; i > 0; i--) {
