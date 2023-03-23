@@ -81,10 +81,11 @@ main h3 {
 
 #random-list {
     margin-left: 30px;
+    color: rgb(2, 153, 153)
 }
 
 #reset {
-    margin: 0px 60px;
+    margin: 30px;
 }
 
 #back {
