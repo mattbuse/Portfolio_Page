@@ -85,6 +85,7 @@ function getRandomArray(array) {
         array[j] = x;   
     }
     results.style.visibility = 'visible';
+    randomButton.style.visibility = 'hidden';
     randomList.innerHTML = array;
 }
 
@@ -102,6 +103,7 @@ function resetPage() {
     button5.innerHTML = '-';
     button6.innerHTML = '-';
     results.style.visibility = 'hidden';
+    randomButton.style.visibility = 'visible';
 }
 
 let button1 = document.getElementById('button1');
