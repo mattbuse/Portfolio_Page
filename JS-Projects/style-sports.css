@@ -70,6 +70,10 @@ main h3 {
     margin: 40px 0px;
 }
 
+.icon {
+    margin: 5px;
+}
+
 .photo {
     display: flex;
     justify-content: center;
