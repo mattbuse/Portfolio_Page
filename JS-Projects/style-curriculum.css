@@ -54,6 +54,11 @@ nav li {
     margin-right: 15px;
 }
 
+nav li a:link {
+    text-decoration: none;
+}
+
+
 main {
     color: rgb(163, 163, 163);
 }
