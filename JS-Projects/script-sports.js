@@ -187,7 +187,7 @@ const chalkPick = (team) => {
 
 const randomSportsAdvice = (sport) => {
     sport = document.getElementById('sport').value;
-    if (sport === 'NFL' || sport === 'nfl') {
+    if (sport === 'NFL' || sport === 'nfl' || sport === 'Nfl' || sport === 'Football' || sport === 'football') {
     let advNum = Math.floor(Math.random() * 5);
     if (advNum === 0) {
         goingToBet(goodnflTeam(),betAmount(),championship());
@@ -201,7 +201,7 @@ const randomSportsAdvice = (sport) => {
         strangerAdvice.innerHTML = 'I don\'t know, man. It\'s probably all fixed anyway.';
         reset.style.visibility = 'visible';
     }
-    } else if (sport === 'NBA' || sport === 'nba') {
+    } else if (sport === 'NBA' || sport === 'nba' || sport === 'Nba' || sport === 'Basketball' || sport === 'basketball') {
         let advNum = Math.floor(Math.random() * 5);
         if (advNum === 0) {
             goingToBet(goodnbaTeam(),betAmount(),championship());
@@ -216,7 +216,7 @@ const randomSportsAdvice = (sport) => {
             reset.style.visibility = 'visible';
         }
     
-    } else if (sport === 'MLB' || sport === 'mlb') {
+    } else if (sport === 'MLB' || sport === 'mlb' || sport === 'Mlb' || sport === 'Baseball' || sport === 'baseball') {
         let advNum = Math.floor(Math.random() * 5);
         if (advNum === 0) {
             goingToBet(goodmlbTeam(),betAmount(),championship());
@@ -230,7 +230,7 @@ const randomSportsAdvice = (sport) => {
             strangerAdvice.innerHTML = 'I don\'t know, man. It\'s probably all fixed anyway.';
             reset.style.visibility = 'visible';
         }
-    } else if (sport === 'NHL' || sport === 'nhl') {
+    } else if (sport === 'NHL' || sport === 'nhl' || sport === 'Nhl' || sport === 'Hockey' || sport === 'hockey') {
         let advNum = Math.floor(Math.random() * 5);
         if (advNum === 0) {
             goingToBet(goodnhlTeam(),betAmount(),championship());
@@ -245,7 +245,7 @@ const randomSportsAdvice = (sport) => {
             reset.style.visibility = 'visible';
         }
     } else {
-        strangerAdvice.innerHTML = 'Sorry, I don\'t really watch that sport.';
+        (sport.length < 1 ? strangerAdvice.innerHTML = 'What\'s your favorite sport?' : strangerAdvice.innerHTML = 'Sorry, I don\'t really watch that sport.');
         reset.style.visibility = 'visible';
         }
 }
