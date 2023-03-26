@@ -86,8 +86,7 @@ function getRandomArray(array) {
     }
     results.style.visibility = 'visible';
     randomButton.style.visibility = 'hidden';
-    console.log(array);
-    array.length > 0 ? randomList.innerHTML = array : randomList.innerHTML = 'Look\'s like everyone took the day off 😂';
+    (array.length > 0 ? randomList.innerHTML = array : randomList.innerHTML = 'Look\'s like everyone took the day off 😂');
 }
 
 function resetPage() {
