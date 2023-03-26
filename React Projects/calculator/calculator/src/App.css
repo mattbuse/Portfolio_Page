@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to right, teal, rgb(168, 2, 168));
+}
+
+.calculator-grid {
+  display: grid;
+  margin-top: 5rem;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+  text-align: center;
+  justify-content: center;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgb(0, 0, 0, .75);
+  display: flex;
+  color:rgb(225, 225, 225, .75);
+}
+
+.calculator-grid button {
+  background-color: rgb(225, 225, 225, .5);
+  font-size: 24px;
+  border: 1px solid darkgray;
+}
+
+.calculator-grid button:hover {
+  background-color: rgb(225, 225, 225, .8);
+}

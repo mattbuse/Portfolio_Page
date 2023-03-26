@@ -86,7 +86,8 @@ function getRandomArray(array) {
     }
     results.style.visibility = 'visible';
     randomButton.style.visibility = 'hidden';
-    randomList.innerHTML = array;
+    console.log(array);
+    array.length > 0 ? randomList.innerHTML = array : randomList.innerHTML = 'Please select at least one name';
 }
 
 function resetPage() {

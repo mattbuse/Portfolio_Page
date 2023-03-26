@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to left, rgb(73, 73, 73), black);
+    background: linear-gradient(to right, black, rgb(73, 73, 73));
     color: whitesmoke;
     padding: 20px;
     font-size: 20px;
@@ -78,6 +78,7 @@ main {
 
 .about-me-text-container {
     margin-right: 40px;
+    line-height: 1.7rem;
 }
 
 .about-me-text-container p {
@@ -106,6 +107,7 @@ main figcaption {
     display: none;
     margin: 50px 0px;
     text-align: justify;
+    line-height: 1.7rem;
 }
 
 #more-about-text img {
