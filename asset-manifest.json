@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/my-app/static/css/main.180826fc.css",
+    "main.js": "/my-app/static/js/main.fd7d3775.js",
+    "static/js/787.a174f9e5.chunk.js": "/my-app/static/js/787.a174f9e5.chunk.js",
+    "static/media/Nunito-ExtraLight.ttf": "/my-app/static/media/Nunito-ExtraLight.52e1b77fe0519dcdcc7f.ttf",
+    "index.html": "/my-app/index.html",
+    "main.180826fc.css.map": "/my-app/static/css/main.180826fc.css.map",
+    "main.fd7d3775.js.map": "/my-app/static/js/main.fd7d3775.js.map",
+    "787.a174f9e5.chunk.js.map": "/my-app/static/js/787.a174f9e5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.180826fc.css",
+    "static/js/main.fd7d3775.js"
+  ]
+}
