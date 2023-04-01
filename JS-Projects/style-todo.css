@@ -74,8 +74,27 @@ main h3 {
     margin: 5px;
 }
 
-.flex-container {
+.input-box {
     display: flex;
+    justify-content: center;
+}
+
+#input {
+    width: 600px;
+    margin: 0 25px;
+}
+
+.to-do-list {
+    margin: 60px;
+}
+
+.completed-list {
+    margin: 60px;
+}
+
+.reset {
+    margin: 60px;
+    text-align: center;
 }
 
 .explanation {
