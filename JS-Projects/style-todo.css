@@ -87,10 +87,16 @@ main h3 {
     line-height: 2rem;
     font-size: 1.3rem;
     border-radius: 10px;
+    margin: 40px 0px 40px 0px;
+    color: whitesmoke;
 }
 
 .content .text:not(:read-only) {
     color:rgb(2, 153, 153);
+}
+
+#list {
+    margin-bottom: 80px;
 }
 
 #list .tasks .task {
@@ -119,7 +125,19 @@ main h3 {
     font-size: 1.3rem;
 }
 
+button {
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    border: none;
+}
 
+button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: solid 1px whitesmoke;
+}
 
 .explanation {
     display: block;
