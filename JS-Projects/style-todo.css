@@ -179,10 +179,67 @@ button:hover {
         justify-content: center;
         font-size: 22px;
     }
+
+    #input-box input {
+        width: 350px;
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .task input {
+        width: 250px;
+        line-height: 1.5rem;
+        border-radius: 10px;
+        padding: 15px;
+        font-size: 1rem;
+    }
+
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     .flex-container {
         display: block;
     }    
+
+    #input-box {
+        width: 100%;
+        display: block;  
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    #input-box input {
+        width: 250px;
+        margin: 30px 20px;
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .task {
+        display: block;
+        text-align: center;
+    }
+
+    .task input {
+        width: 200px;
+        line-height: 1.5rem;
+        border-radius: 10px;
+        padding: 0px;
+        margin: 25px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #list .tasks .task {
+        display: block;
+        text-align: center;
+    }
+
+    .task {
+        margin: 20px 0px;
+    }
+
+    .task button {
+        margin: 15px 0px;
+    }
 }
