@@ -29,25 +29,33 @@
       </div>
       <br>
       <section class="body">
-        <form class="input-box">
-            <input type="text" id="input">
-            <button id="submit">Add</button>
-        </form>
-        <div class="to-do-list">
-            <p>To Do List</p>
-            <p class="to-do-array"></p>
+        <div id="input-box">
+            <input id="input" type="text" placeholder="Enter a Task" />
+            <button type="submit" id="submit">Add Task</button>
         </div>
-        <div class="completed-list">
-            <p>Completed</p>
-            <p class="completed-array"></p>
-        </div>
-        <div class="reset">
-            <button>Reset</button>
-        </div>
+        <h4>List of Things To Do</h4>
+        <div id="list">
+            <div id="tasks">
+                <!-- <div class="task">
+                    <div class="content">
+                        <input
+                            type="text"
+                            class="text"
+                            value="Sample Task"
+                            readonly
+                            />
+                    </div>
+                    <div class="actions">
+                        <button class="edit">EDIT</button>
+                        <button class="delete">DELETE</button>
+                    </div>
+                </div> -->
+            </div>
+        </div>        
       </section>
       <div class="explanation">
         <p>Welcome to my To Do List app.</p>
-        <p>Simply type things 'To Do' in the input box above and click the plus sign to add them to a list. Once added, you can click the circle to mark them completed, or the 'x' to remove them from your list.</p>
+        <p>Add items to do in the input box above and click 'Add Task' to add them to a list. You can then use the 'EDIT' and 'DELETE' buttons on the right side to modify or remove them from your list.</p>
       </div>
     <script src="./script-todo.js"></script>
     </main>

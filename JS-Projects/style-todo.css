@@ -74,32 +74,57 @@ main h3 {
     margin: 5px;
 }
 
-.input-box {
+#input-box {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    padding-bottom: 40px;
+    align-items: center;
+    justify-content: space-around;
 }
 
-#input {
+#input-box input {
+    width: 750px;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.content .text:not(:read-only) {
+    color:rgb(2, 153, 153);
+}
+
+#list .tasks .task {
+    display: flex;
+    margin: 15px;
+}
+
+#list .actions button {
+    margin: 0 15px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.task input {
     width: 600px;
-    margin: 0 25px;
+    line-height: 2rem;
+    border-radius: 10px;
+    padding: 15px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
 }
 
-.to-do-list {
-    margin: 60px;
-}
 
-.completed-list {
-    margin: 60px;
-}
-
-.reset {
-    margin: 60px;
-    text-align: center;
-}
 
 .explanation {
     display: block;
     padding: 40px;
+    line-height: 1.7rem;
 }
 
 #back {
