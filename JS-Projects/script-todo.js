@@ -35,8 +35,13 @@ function addToList(e) {
     task_actions_delete_el.classList.add('delete');
     task_actions_delete_el.innerHTML = 'DELETE';
 
+    const task_actions_complete_el = document.createElement("button");
+    task_actions_complete_el.classList.add('complete');
+    task_actions_complete_el.innerHTML = 'COMPLETE';
+
     task_actions_el.appendChild(task_actions_edit_el);
     task_actions_el.appendChild(task_actions_delete_el);
+    task_actions_el.appendChild(task_actions_complete_el);
     
     task_el.appendChild(task_actions_el);
     list_el.appendChild(task_el);
@@ -56,6 +61,16 @@ function addToList(e) {
 
     task_actions_delete_el.addEventListener("click", () => {
         list_el.removeChild(task_el);
+    });
+
+    task_actions_complete_el.addEventListener("click", () => {
+        if (task_input_el.style.textDecoration === 'line-through') {
+            task_input_el.style.textDecoration = 'none';
+            task_actions_complete_el.innerHTML = 'COMPLETE';
+        } else {
+            task_input_el.style.textDecoration = 'line-through';
+            task_actions_complete_el.innerHTML = 'UN-COMPLETE';
+        }
     });
 
 }
