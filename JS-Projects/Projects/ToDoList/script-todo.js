@@ -2,7 +2,7 @@ function addToList(e) {
     e.preventDefault();
     const task = input.value;
     if (!task) {
-        alert("Please select a task");
+        alert("Please enter a task");
         return;
     }
 
