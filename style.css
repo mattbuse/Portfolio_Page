@@ -85,6 +85,14 @@ main {
     text-align: justify;
 }
 
+.about-me-container h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    text-align: center;
+    margin: 20px 0px;
+    letter-spacing: .5px;
+}
+
 .center {
     display: block;
     margin-left: auto;
