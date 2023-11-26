@@ -23,7 +23,7 @@ const goodnbaTeam = () => {
     } else if (nbateamNum === 2) {
         team = 'Suns';
     } else {
-        team = 'Grizzlies';
+        team = 'Warriors';
     }
     return team;
 }
@@ -49,7 +49,7 @@ const goodnhlTeam = () => {
     if (nhlteamNum === 0) {
         team = 'Bruins';
     } else if (nhlteamNum === 1) {
-        team = 'Devils';
+        team = 'Lightning';
     } else if (nhlteamNum === 2) {
         team = 'Stars';
     } else {
@@ -64,7 +64,7 @@ const underdognflTeam = () => {
     if (nflteamNum === 0) {
         team = 'Broncos';
     } else if (nflteamNum === 1) {
-        team = 'Texans';
+        team = 'Panthers';
     } else if (nflteamNum === 2) {
         team = 'Cardinals';
     } else {
@@ -92,7 +92,7 @@ const underdogmlbTeam = () => {
     let team;
     let mlbteamNum = Math.floor(Math.random() * 4);
     if (mlbteamNum === 0) {
-        team = 'Indians';
+        team = 'Guardians';
     } else if (mlbteamNum === 1) {
         team = 'Mariners';
     } else if (mlbteamNum === 2) {
@@ -153,13 +153,13 @@ const loseEarly = () => {
 const championship = () => {
     let sport = document.getElementById('sport').value;
     let finalRound;
-    if (sport === 'NFL' || sport === 'nfl') {
+    if (sport === 'NFL' || sport === 'nfl' || sport === 'Nfl') {
         finalRound = 'Super Bowl';
-    } else if (sport === 'NBA' || sport === 'nba') {
+    } else if (sport === 'NBA' || sport === 'nba' || sport === 'Nba') {
         finalRound = 'NBA Finals';
-    } else if (sport === 'NHL' || sport === 'nhl') {
+    } else if (sport === 'NHL' || sport === 'nhl' || sport === 'Nhl') {
         finalRound = 'Stanley Cup';
-    } else if (sport === 'MLB' || sport === 'mlb') {
+    } else if (sport === 'MLB' || sport === 'mlb' || sport === 'Mlb') {
         finalRound = 'World Series';
     }
     return finalRound;
