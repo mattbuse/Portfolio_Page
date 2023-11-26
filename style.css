@@ -183,7 +183,7 @@ main h3 {
     padding: 20px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
     body {
         font-size: 18px;
         padding: 25px;
